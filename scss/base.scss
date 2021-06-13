@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../assets/fonts/TTHoves-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+figure,
+hr,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+}

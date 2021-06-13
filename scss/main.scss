@@ -1,0 +1,121 @@
+$btn-hover-color: #f9f9f9;
+
+.page-main {
+  &__project-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 135px;
+    margin-bottom: 120px;
+  }
+
+  &__project-group {
+    &_text {
+      font-size: 64px;
+      line-height: 64px;
+      font-style: normal;
+      margin-bottom: 90px;
+      /*  width: 100%; */
+    }
+
+    &_project-text {
+      font-weight: 300;
+      color: #bdbdbd;
+    }
+
+    &_home-text {
+      font-weight: bold;
+      color: #333333;
+    }
+
+    &_arrows {
+      display: flex;
+      align-items: center;
+      margin-bottom: 90px;
+      .arrow {
+        width: 53px;
+        height: 53px;
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        cursor: pointer;
+      }
+
+      .arrow:hover,
+      .arrow:focus {
+        background: $btn-hover-color;
+      }
+    }
+
+    &_right-arrow {
+      margin-left: 23px;
+    }
+
+    &_line {
+      width: 271px;
+      /* width: 19%; */
+      height: 1px;
+      background-color: #f2f2f2;
+      position: relative;
+    }
+
+    &_date {
+      display: flex;
+
+      .numbers {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        color: #bdbdbd;
+      }
+    }
+
+    &_delimiter {
+      width: 44px;
+      height: 2px;
+      background-color: #e0e0e0;
+      transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 10);
+      margin: 0 32px 0 26px;
+    }
+  }
+
+  &__photo-group {
+    position: relative;
+    width: 770px;
+    height: 829px;
+    /* &_photo {
+      width: 770px;
+      height: 829px; 
+    }*/
+
+    &_btn {
+      position: absolute;
+      width: 222px;
+      height: 71px;
+      left: 0px;
+      bottom: 0px;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &_btn:hover {
+      background: $btn-hover-color;
+    }
+
+    &_btn-text {
+      margin-right: 15px;
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.2em;
+      color: #333333;
+    }
+  }
+}
