@@ -1,8 +1,74 @@
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../assets/fonts/TTHoves-Regular.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+figure,
+hr,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+}
+
+.page-main {
+  padding: 0 135px;
+  max-width: 1700px;
+  margin: 0 auto;
+  /* &__main-tasks-header {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #bdbdbd; */
+  /* margin-bottom: 62px; */
+  /*  } */
+}
+.page-main .headers {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #bdbdbd;
+}
+.page-main .headers-white {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
 .page-main__project-photo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 135px;
+  /* padding: 0 135px; */
   margin-bottom: 120px;
 }
 .page-main__project-group_text {
@@ -73,11 +139,8 @@
   }*/
 }
 .page-main__photo-group_btn {
-  position: absolute;
   width: 222px;
   height: 71px;
-  left: 0px;
-  bottom: 0px;
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -85,19 +148,456 @@
   outline: none;
   border: none;
   cursor: pointer;
+  transition: background-color 0.5s;
+  position: absolute;
+  /* width: 222px;
+  height: 71px; */
+  left: 0px;
+  bottom: 0px;
+  /* background: $white-color; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer; */
 }
 .page-main__photo-group_btn:hover {
   background: #f9f9f9;
 }
 .page-main__photo-group_btn-text {
+  /* margin-right: 15px;
+  font-family: "TT Hoves";
+  font-style: normal; */
+  /* font-weight: normal; */
+  /* font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333; */
   margin-right: 15px;
   font-family: "TT Hoves";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
   color: #333333;
+}
+.page-main__about-container {
+  /* width: 1170px; */
+  height: 435px;
+  background-color: #fbfbfb;
+  margin: 0 auto 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 70px 0 100px;
+}
+.page-main__about-photoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  /* position: relative; */
+}
+.page-main__about-photoes_photo {
+  display: block;
+}
+.page-main__about-photoes .photo-one {
+  width: 270px;
+  height: 265px;
+  /* margin-bottom: 30px; */
+  margin-top: 30px;
+}
+.page-main__about-photoes .photo-two {
+  width: 270px;
+  height: 140px;
+  /* padding-top: 30px; */
+  margin-top: 30px;
+}
+.page-main__about-photoes .photo-three {
+  width: 270px;
+  height: 345px;
+  margin-left: 30px;
+  /* position: absolute;
+  right: 0; */
+}
+.page-main__about-text_header {
+  /* font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #bdbdbd; */
+  margin-bottom: 20px;
+}
+.page-main__about-text_main-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  /* font-size: 14px; */
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 506px;
+  /* width: 400px; */
+}
+.page-main__about-text_btn {
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  transition: border 1s, border-color 0s;
+  margin-bottom: 30px;
+}
+.page-main__about-text_btn:hover {
+  background: #f9f9f9;
+  border: 8px solid #ffffff;
+}
+.page-main__about-text_btn-text {
+  margin-right: 15px;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+}
+.page-main__tasks-container {
+  margin-bottom: 122px;
+}
+.page-main__tasks {
+  display: flex;
+  justify-content: space-between;
+  /* &_number-one {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px; */
+  /* line-height: 200px; */
+  /* line-height: 239px;
+    display: flex;
+    align-items: center;
+    color: #f2f2f2;
+  } */
+}
+.page-main__tasks_first-column {
+  display: flex;
+}
+.page-main__tasks .numbers {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 239px;
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+}
+.page-main__tasks .texts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  margin: 45px 0 0 30px;
+}
+.page-main__tasks_text-one {
+  /* font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  margin: 45px 0 0 30px;*/
+  width: 380px;
+  /* width: 279px;
+  height: 144px; */
+}
+.page-main__tasks_second-column {
+  display: flex;
+}
+.page-main__tasks_text-two {
+  width: 510px;
+}
+.page-main__projects-container {
+  margin-bottom: 120px;
+}
+.page-main__projects-container .imgs-wrapper {
+  height: 255px;
+  min-width: 1170px;
+}
+.page-main__projects-container .figures {
+  position: relative;
+}
+.page-main__projects-container .projects-imgs {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  cursor: pointer;
+}
+.page-main__projects-container .hidden-wrappers {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  top: 0;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.8; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.page-main__projects-container .hidden-wrappers:hover {
+  opacity: 0.8;
+}
+.page-main__projects-container .hidden-content-wrappers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-main__projects-container .hidden-btns {
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  width: 133px;
+  height: 12px;
+  background-color: transparent;
+}
+.page-main__projects-container .hidden-btns-text {
+  margin-right: 15px;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+  font-family: "Gothic A1", sans-serif;
+}
+.page-main__projects-container .hidden-btns-text,
+.page-main__projects-container .hidden-btns-arrow {
+  color: #ffffff;
+}
+.page-main__projects-container .factory-header {
+  font-size: 50px;
+}
+.page-main__projects-container .big-house-header {
+  font-size: 55px;
+}
+.page-main__main-projects-header {
+  margin-bottom: 60px;
+}
+.page-main__projects-first-row {
+  display: flex;
+  margin-bottom: 30px;
+  /* justify-content: space-between; */
+  /* min-width: 1170px; */
+  /* &_centre-img,
+  &_theatre-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+  } */
+  /* &_theatre-img { */
+  /* padding-left: $imgs-indent; */
+  /* margin-left: $imgs-indent; */
+  /* } */
+}
+.page-main__projects-first-row_centre-img-wrapper, .page-main__projects-first-row_theatre-img-wrapper {
+  flex-grow: 1;
+}
+.page-main__projects-first-row_theatre-img-wrapper {
+  margin-left: 30px;
+}
+.page-main__projects-second-row {
+  display: flex;
+  margin-bottom: 30px;
+  /* &_factory-img,
+  &_theatre-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+  } */
+  /* &_factory-img {
+    padding-top: $imgs-indent;
+    padding-right: $imgs-indent;
+  } */
+  /* &_big-house-img {
+       padding: $imgs-indent, 0, 0, 0;
+     }
+  */
+  /* &_roof-img-img {
+    padding: $imgs-indent, $imgs-indent, 0, 0;
+  } */
+}
+.page-main__projects-second-row_factory-img-wrapper, .page-main__projects-second-row_big-house-img-wrapper {
+  margin-right: 30px;
+}
+.page-main__projects-second-row_factory-img-wrapper {
+  flex-grow: 1;
+}
+.page-main__projects-second-row_big-house-img-wrapper {
+  flex-grow: 3;
+}
+.page-main__projects-second-row_roof-img-wrapper {
+  flex-grow: 2;
+}
+.page-main__projects-third-row {
+  display: flex;
+  justify-content: flex-end;
+}
+.page-main__projects-btn {
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  background-color: #333333;
+  border: 2px solid transparent;
+}
+.page-main__projects-btn_btn-text {
+  margin-right: 15px;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+}
+.page-main__projects-btn_btn-text, .page-main__projects-btn_btn-arrow {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+.page-main__projects-btn:hover {
+  background-color: #ffffff;
+  border-color: #333333;
+}
+.page-main__projects-btn:hover .page-main__projects-btn_btn-text {
+  color: #333333;
+}
+.page-main__projects-btn:hover .page-main__projects-btn_btn-arrow {
+  color: #333333;
+}
+.page-main__contact-us-container {
+  margin-bottom: 120px;
+}
+.page-main__contact-us-header {
+  margin-bottom: 22px;
+}
+.page-main__contact-us-form-img-wrapper {
+  display: flex;
+}
+.page-main__contact-us-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 391px;
+}
+.page-main__contact-us-form_textarea {
+  height: 147px;
+  margin-bottom: 22px;
+  padding-top: 14px;
+  resize: none;
+  /* padding-right: 24px; */
+}
+.page-main__contact-us-form_textarea::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8d8d8d;
+}
+.page-main__contact-us-form_label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  margin-left: 40px;
+  margin-bottom: 21px;
+}
+.page-main__contact-us-form_btn {
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  background-color: #333333;
+}
+.page-main__contact-us-form_btn-text {
+  margin-right: 15px;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #333333;
+}
+.page-main__contact-us-form_btn-text, .page-main__contact-us-form_btn-arrow {
+  color: #ffffff;
+}
+.page-main__contact-us-form input,
+.page-main textarea {
+  background: #f3f3f3;
+  outline: none;
+  border: none;
+  padding-left: 21px;
+}
+.page-main__contact-us-form input {
+  height: 46px;
+  /* background: #f3f3f3;
+  outline: none;
+  border: none; */
+  margin-bottom: 10px;
+  /* padding-left: 21px; */
+}
+.page-main__contact-us-form input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8d8d8d;
+}
+.page-main__contact-us-img-wrapper {
+  height: 369px;
+  flex-grow: 1;
+}
+.page-main__contact-us-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 /*# sourceMappingURL=main.css.map */

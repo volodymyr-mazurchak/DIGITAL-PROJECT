@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header class="page-header">
@@ -86,12 +90,16 @@
         </div>
         <div class="page-main__about-container">
             <div class="page-main__about-photoes">
-                <img src="./assets/imgs/about_house_1.png" alt="House 1" class="page-main__about-photoes_photo photo-one">
-                <img src="./assets/imgs/about_house_2.png" alt="House 2" class="page-main__about-photoes_photo photo-two">
-                <img src="./assets/imgs/about_house_3.png" alt="House 3" class="page-main__about-photoes_photo photo-three">
+                <div class="page-main__about-photoes_first-container">
+                    <img src="./assets/imgs/about_house_1.png" alt="House 1" class="page-main__about-photoes_photo photo-one">
+                    <img src="./assets/imgs/about_house_2.png" alt="House 2" class="page-main__about-photoes_photo photo-two">
+                </div>
+                <div class="page-main__about-photoes_second-container">
+                    <img src="./assets/imgs/about_house_3.png" alt="House 3" class="page-main__about-photoes_photo photo-three">
+                </div>
             </div>
             <div class="page-main__about-text">
-                <p class="page-main__about-text_header">О компании</p>
+                <p class="page-main__about-text_header headers">О компании</p>
                 <p class="page-main__about-text_main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 <button class="page-main__about-text_btn">
                     <span class="page-main__about-text_btn-text">ЧИТАТЬ</span>
@@ -99,6 +107,176 @@
                 </button>
             </div>
         </div>
+        <div class="page-main__tasks-container">
+            <p class="page-main__main-tasks-header headers">Основные задачи</p>
+            <div class="page-main__tasks">
+                <div class="page-main__tasks_first-column">
+                    <span class="page-main__tasks_number-one numbers">1</span>
+                    <span class="page-main__tasks_text-one texts">Создание комфортных условий и повышение качества обслуживания клиентов</span>
+                </div>
+                <div class="page-main__tasks_second-column">
+                    <span class="page-main__tasks_number-two numbers">2</span>
+                    <span class="page-main__tasks_text-two texts">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</span>
+                </div>
+            </div>
+        </div>
+        <div class="page-main__projects-container">
+            <p class="page-main__main-projects-header headers">Наши проекты</p>
+            <div class="page-main__projects-first-row imgs-wrapper">
+                <figure class="page-main__projects-first-row_centre-img-wrapper figures">
+                    <img src="./assets/imgs/centr.png" alt="Leisure centre" class="page-main__projects-first-row_centre-img projects-imgs">
+                    <div class="hidden-wrappers">
+                        <div class="hidden-content-wrappers">
+                            <p class="headers-white">ДОСУГОВЫЙ ЦЕНТР</p>
+                            <button class="hidden-btns">
+                                <span class="hidden-btns-text">ПОДРОБНЕЕ</span>
+                                <span class="hidden-btns-arrow">&#8594;</span>
+                            </button>
+                        </div>
+                    </div> 
+                </figure>
+                <figure class="page-main__projects-first-row_theatre-img-wrapper figures">
+                    <img src="./assets/imgs/theatre.png" alt="Theatre" class="page-main__projects-first-row_theatre-img projects-imgs">
+                    <div class="hidden-wrappers">
+                        <div class="hidden-content-wrappers">
+                            <p class="headers-white">ТЕАТР</p>
+                            <button class="hidden-btns">
+                                <span class="hidden-btns-text">ПОДРОБНЕЕ</span>
+                                <span class="hidden-btns-arrow">&#8594;</span>
+                            </button>
+                        </div>
+                    </div> 
+                </figure>
+            </div>
+            <div class="page-main__projects-second-row imgs-wrapper">
+                <figure class="page-main__projects-second-row_factory-img-wrapper figures">
+                    <img src="./assets/imgs//factory.png" alt="Factory" class="page-main__projects-second-row_factory-img projects-imgs">
+                    <div class="hidden-wrappers">
+                        <div class="hidden-content-wrappers">
+                            <p class="headers-white factory-header">ФАБРИКА</p>
+                            <button class="hidden-btns">
+                                <span class="hidden-btns-text">ПОДРОБНЕЕ</span>
+                                <span class="hidden-btns-arrow">&#8594;</span>
+                            </button>
+                        </div>
+                    </div> 
+                </figure>
+                <figure class="page-main__projects-second-row_big-house-img-wrapper figures">
+                    <img src="./assets/imgs/big-house.png" alt="Big House" class="page-main__projects-second-row_big-house-img projects-imgs">
+                    <div class="hidden-wrappers">
+                        <div class="hidden-content-wrappers">
+                            <p class="headers-white big-house-header">МНОГОЭТАЖКА</p>
+                            <button class="hidden-btns">
+                                <span class="hidden-btns-text">ПОДРОБНЕЕ</span>
+                                <span class="hidden-btns-arrow">&#8594;</span>
+                            </button>
+                        </div>
+                    </div> 
+                </figure>
+                <figure class="page-main__projects-second-row_roof-img-wrapper figures">
+                    <img src="./assets/imgs/roof.png" alt="Roof" class="page-main__projects-second-row_roof-img projects-imgs">
+                    <div class="hidden-wrappers">
+                        <div class="hidden-content-wrappers">
+                            <p class="headers-white">КРЫША</p>
+                            <button class="hidden-btns">
+                                <span class="hidden-btns-text">ПОДРОБНЕЕ</span>
+                                <span class="hidden-btns-arrow">&#8594;</span>
+                            </button>
+                        </div>
+                    </div> 
+                </figure>
+            </div>
+            <div class="page-main__projects-third-row">
+                <button class="page-main__projects-btn">
+                    <span class="page-main__projects-btn_btn-text">ВСЕ ПРОЕКТЫ</span>
+                    <span class="page-main__projects-btn_btn-arrow">&#8594;</span>
+                </button>
+            </div>
+        </div>
+        <div class="page-main__contact-us-container">
+            <p class="page-main__contact-us-header headers">Связаться с нами</p>
+            <div class="page-main__contact-us-form-img-wrapper">
+                <form class="page-main__contact-us-form">
+                    <input type="text" class="page-main__contact-us-form_name" placeholder="Имя">
+                    <input type="tel" class="page-main__contact-us-form_phone" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+380 (**) ***-**-**" placeholder="Номер телефона*" required>
+                    <input type="email" class="page-main__contact-us-form_email" placeholder="E-mail*" pattern="^.+@.+\.[a-zA-Z]{2,63}$" required>
+                    <input type="text" class="page-main__contact-us-form_product" placeholder="Интересующий товар/услуга">
+                    <textarea class="page-main__contact-us-form_textarea" placeholder="Сообщение*" required></textarea>
+                    <!-- <input type="text" class="page-main__contact-us-form_textarea" placeholder="Сообщение*" required></input> -->
+                    <label class="page-main__contact-us-form_label">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</label> <!-- for="submit" -->
+                    <!-- <input type="submit" id="submit" class="page-main__contact-us-form_submit" value="">  -->
+                    <button class="page-main__contact-us-form_btn">
+                        <span class="page-main__contact-us-form_btn-text">ОТПРАВИТЬ</span>
+                        <span class="page-main__contact-us-form_btn-arrow">&#8594;</span>
+                    </button> 
+                </form>
+                <figure class="page-main__contact-us-img-wrapper">
+                    <img src="./assets/imgs/man-with-mobile.png" alt="Man with mobile" class="page-main__contact-us-img">
+                </figure>
+            </div>
+        </div>
     </main>
+    <footer class="page-footer">
+        <div class="page-footer__top">
+            <div class="page-footer__logo-wrapper">
+                <img src="./assets/imgs/white-logo.png" alt="White logo">
+            </div>
+            <div class="page-footer__info-wrapper">
+                <p class="page-footer__info-wrapper_header top-headers">Информация</p>
+                <ul class="page-footer__info-wrapper_list">
+                    <li class="page-footer__info-wrapper_list-elem">
+                        <a href="#" class="page-footer__info-wrapper_list-link top-text">Главная</a>
+                    </li>
+                    <li class="page-footer__info-wrapper_list-elem">
+                        <a href="#" class="page-footer__info-wrapper_list-link top-text">Галерея</a>
+                    </li>
+                    <li class="page-footer__info-wrapper_list-elem">
+                        <a href="#" class="page-footer__info-wrapper_list-link top-text">Проекты</a>
+                    </li>
+                    <li class="page-footer__info-wrapper_list-elem">
+                        <a href="#" class="page-footer__info-wrapper_list-link top-text">Сертификаты</a>
+                    </li>
+                    <li class="page-footer__info-wrapper_list-elem">
+                        <a href="#" class="page-footer__info-wrapper_list-link top-text">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__contact-wrapper">
+                <p class="page-footer__contact-wrapper_header top-headers">Контакты</p>
+                <div class="page-footer__contact-wrapper_address-wrapper">
+                    <img src="./assets/imgs/map.png" alt="Map" class="page-footer__contact-wrapper_address-img">
+                    <p class="page-footer__contact-wrapper_address-text top-text">100000, Республика  Казахстан,<br /> г. Караганда, ул. Телевизионная 10</p>
+                </div>
+                <div class="page-footer__contact-wrapper_telephone-wrapper">
+                    <img src="./assets/imgs/telephone.png" alt="Telephone" class="page-footer__contact-wrapper_telephone-img">
+                    <p class="page-footer__contact-wrapper_telephone-text top-text">+38 (000) 000 00 00</p>
+                </div>
+                <div class="page-footer__contact-wrapper_email-wrapper">
+                    <img src="./assets/imgs/email.png" alt="Email" class="page-footer__contact-wrapper_email-img">
+                    <p class="page-footer__contact-wrapper_email-text top-text">mail@gmail.com</p>
+                </div>
+            </div>
+            <div class="page-footer__social-networks-wrapper">
+                <p class="page-footer__social-networks-wrapper_header top-headers">Социальные сети</p>
+                <div class="page-footer__social-networks-wrapper_logos-wrapper">
+                    <a href="#" class="page-footer__social-networks-wrapper_logos-link">
+                        <img src="./assets/imgs/facebook.png" alt="Facebook" class="page-footer__social-networks-wrapper_logos">
+                    </a>
+                    <a href="#" class="page-footer__social-networks-wrapper_logos-link">
+                        <img src="./assets/imgs/twitter.png" alt="Twitter" class="page-footer__social-networks-wrapper_logos">
+                    </a>
+                    <a href="#" class="page-footer__social-networks-wrapper_logos-link">
+                        <img src="./assets/imgs/linked.png" alt="Linked In" class="page-footer__social-networks-wrapper_logos">
+                    </a>
+                    <a href="#" class="page-footer__social-networks-wrapper_logos-link">
+                        <img src="./assets/imgs/pinterest.png" alt="Pinterest" class="page-footer__social-networks-wrapper_logos">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__bottom">
+            <span class="page-footer__bottom_text">© 2019 Digital Project. Все права защищены.</span>
+        </div>
+    </footer>
 </body>
 </html>

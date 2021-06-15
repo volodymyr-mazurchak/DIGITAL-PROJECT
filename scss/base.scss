@@ -3,6 +3,13 @@
   src: url("../assets/fonts/TTHoves-Regular.ttf");
 }
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
+
+$max-width: 1700px;
+
 * {
   box-sizing: border-box;
 }

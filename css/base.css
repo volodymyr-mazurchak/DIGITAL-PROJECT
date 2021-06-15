@@ -2,6 +2,10 @@
   font-family: "TT Hoves";
   src: url("../assets/fonts/TTHoves-Regular.ttf");
 }
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
 * {
   box-sizing: border-box;
 }
