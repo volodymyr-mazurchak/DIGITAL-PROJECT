@@ -1,78 +1,18 @@
-@font-face {
-  font-family: "TT Hoves";
-  src: url("../assets/fonts/TTHoves-Regular.ttf");
-}
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
-}
-* {
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 13 | /   @include mobile {
+ * 14 | |     padding: 0 1em;
+ * 15 | \   }
+ *    '
+ *   scss\header.scss 13:3  root stylesheet */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-p,
-figure,
-hr,
-body {
-  margin: 0;
-  padding: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c    @include mobile {\a 14 \2502  \2502      padding: 0 1em;\a 15 \2502  \2514    }\a    \2575 \a   scss\\header.scss 13:3  root stylesheet";
 }
-
-body {
-  font-family: "TT Hoves";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2em;
-  color: #333333;
-}
-
-.page-header {
-  height: 102px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1700px;
-  margin: 0 auto;
-}
-.page-header__logo-wrapper_logo {
-  margin-left: 135px;
-  cursor: pointer;
-}
-.page-header__nav {
-  display: flex;
-  margin-right: 269px;
-}
-.page-header__nav_elem {
-  list-style: none;
-}
-.page-header__nav_elem:not(:first-of-type) {
-  margin-left: 60px;
-}
-.page-header__nav_link {
-  text-decoration: none;
-  color: #333333;
-  padding: 4px 0;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  transition: border 0.5s;
-}
-.page-header__nav_link:hover {
-  color: #868282;
-}
-.page-header__nav_link:focus {
-  /* border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333; */
-  border-color: #333333;
-}
-
-/*# sourceMappingURL=header.css.map */

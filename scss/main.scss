@@ -1,28 +1,35 @@
-@import "./mixins/buttonMixin.scss";
-@import "./base.scss";
-
 $btn-hover-color: #f9f9f9;
 $imgs-indent: 30px;
 $white-color: #ffffff;
 
 .page-main {
-  padding: 0 135px;
-  max-width: $max-width;
-  margin: 0 auto;
+  /* padding: 0 135px; */
+  /* max-width: $max-width; */
+  /* margin: 0 auto; */
+  min-width: 15.625em;
+
+  @include small-laptop {
+    padding: 0;
+  }
+
+  @include mobile {
+    padding: 0 1em;
+  }
 
   .headers {
     font-style: normal;
     font-weight: 300;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4em;
+    line-height: 1em;
     color: #bdbdbd;
   }
 
   .headers-white {
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 64px;
+    /* font-size: 64px; */
+    font-size: 4em;
+    line-height: 1em;
     color: $white-color;
     margin-bottom: 14px;
   }
@@ -33,6 +40,12 @@ $white-color: #ffffff;
     align-items: center;
     /* padding: 0 135px; */
     margin-bottom: 120px;
+
+    @include small-laptop {
+      flex-direction: column;
+      /* align-items: flex-start; */
+      margin-top: 5em;
+    }
   }
 
   &__project-group {
@@ -41,7 +54,16 @@ $white-color: #ffffff;
       line-height: 64px;
       font-style: normal;
       margin-bottom: 90px;
-      /*  width: 100%; */
+      /* min-width: 5.15625em; */
+
+      @include small-laptop {
+        text-align: center;
+        margin-bottom: 0.78125em;
+      }
+
+      @include mobile {
+        font-size: 3em;
+      }
     }
 
     &_project-text {
@@ -58,6 +80,12 @@ $white-color: #ffffff;
       display: flex;
       align-items: center;
       margin-bottom: 90px;
+
+      @include small-laptop {
+        justify-content: center;
+        margin-bottom: 3.125em;
+      }
+
       .arrow {
         width: 53px;
         height: 53px;
@@ -82,10 +110,19 @@ $white-color: #ffffff;
       height: 1px;
       background-color: #f2f2f2;
       position: relative;
+
+      @include small-laptop {
+        display: none;
+      }
     }
 
     &_date {
       display: flex;
+
+      @include small-laptop {
+        justify-content: center;
+        margin-bottom: 3.125em;
+      }
 
       .numbers {
         font-style: normal;
@@ -109,6 +146,23 @@ $white-color: #ffffff;
     position: relative;
     width: 770px;
     height: 829px;
+    min-width: 15.5em;
+
+    @include tablet {
+      width: 78%;
+      height: auto;
+      /* min-width: 15.5em; */
+
+      &_photo {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @include tiny {
+      width: 100%;
+    }
+
     /* &_photo {
       width: 770px;
       height: 829px; 
@@ -150,12 +204,15 @@ $white-color: #ffffff;
 
   &__about-container {
     /* width: 1170px; */
+    /* min-width: 1700px; */
     height: 435px;
     background-color: #fbfbfb;
     margin: 0 auto 150px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 70px 0 100px;
+    padding: 1.875em 4.375em 0 6.25em;
+    /* letter-spacing: 0.2em; */
+    /* padding: 30px 70px 0 100px; */
   }
 
   &__about-photoes {
@@ -210,14 +267,14 @@ $white-color: #ffffff;
       line-height: 25px;
       color: #000000;
       margin-bottom: 20px;
-      width: 506px;
+      /* width: 506px; */
       /* width: 400px; */
     }
 
     &_btn {
       @include btn;
       transition: border 1s, border-color 0s;
-      margin-bottom: 30px;
+      /* margin-bottom: 30px; */
     }
 
     &_btn:hover {
@@ -517,6 +574,7 @@ $white-color: #ffffff;
       line-height: 17px;
       letter-spacing: 0.04em;
       color: #8d8d8d;
+      font-family: "TT Hoves";
     }
 
     &_label {

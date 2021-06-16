@@ -6,6 +6,7 @@
   font-family: "SF Pro Display";
   src: url("../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
 }
+/* $max-width: 1700px; */
 * {
   box-sizing: border-box;
 }
@@ -30,10 +31,18 @@ body {
   font-family: "TT Hoves";
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2em;
+  font-size: 16px;
+  line-height: 16px;
+  /* letter-spacing: 0.2em; */
+  /* letter-spacing: 0.15000000000000002em; */
   color: #333333;
+}
+
+.wrapper {
+  /* max-width: 90em; // 1440px */
+  max-width: 106.25em;
+  margin: 0 auto;
+  padding: 0 8.4375em;
 }
 
 /*# sourceMappingURL=base.css.map */
