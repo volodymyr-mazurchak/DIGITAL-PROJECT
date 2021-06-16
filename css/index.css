@@ -148,6 +148,11 @@ body {
   line-height: 1em;
   color: #bdbdbd;
 }
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main .headers {
+    font-size: 3em;
+  }
+}
 .page-main .headers-white {
   font-style: normal;
   font-weight: bold;
@@ -262,26 +267,39 @@ body {
   width: 770px;
   height: 829px;
   min-width: 15.5em;
+  /* @include tablet {
+    width: 78%; */
+  /* height: auto; */
+  /* min-width: 15.5em; */
+  /* &_photo {
+      width: 100%;
+      height: 100%;
+    } */
+  /*  } */
   /* &_photo {
     width: 770px;
     height: 829px; 
   }*/
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__photo-group {
+    width: 34.375em;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
   .page-main__photo-group {
     width: 78%;
-    height: auto;
-    /* min-width: 15.5em; */
-  }
-  .page-main__photo-group_photo {
-    width: 100%;
-    height: 100%;
   }
 }
 @media screen and (max-width: 280px) {
   .page-main__photo-group {
     width: 100%;
   }
+}
+.page-main__photo-group_photo {
+  width: 100%;
+  height: 100%;
 }
 .page-main__photo-group_btn {
   width: 222px;
@@ -341,12 +359,45 @@ body {
   /* letter-spacing: 0.2em; */
   /* padding: 30px 70px 0 100px; */
 }
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-container {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+}
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main__about-container {
+    flex-direction: column-reverse;
+  }
+}
 .page-main__about-photoes {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
   /* position: relative; */
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-photoes {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main__about-photoes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-photoes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-photoes_first-container {
+    width: 100%;
+  }
 }
 .page-main__about-photoes_photo {
   display: block;
@@ -357,11 +408,28 @@ body {
   /* margin-bottom: 30px; */
   margin-top: 30px;
 }
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-photoes .photo-one {
+    width: 100%;
+    height: auto;
+  }
+}
 .page-main__about-photoes .photo-two {
   width: 270px;
   height: 140px;
   /* padding-top: 30px; */
   margin-top: 30px;
+}
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main__about-photoes .photo-two {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-photoes .photo-two {
+    width: 100%;
+    height: auto;
+  }
 }
 .page-main__about-photoes .photo-three {
   width: 270px;
@@ -370,6 +438,23 @@ body {
   /* position: absolute;
   right: 0; */
 }
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main__about-photoes .photo-three {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-photoes .photo-three {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-text {
+    text-align: center;
+    padding: 0 1em;
+  }
+}
 .page-main__about-text_header {
   /* font-style: normal;
   font-weight: 300;
@@ -377,6 +462,19 @@ body {
   line-height: 64px;
   color: #bdbdbd; */
   margin-bottom: 20px;
+  /* @include large-mobile {
+    font-size: 3em;
+  } */
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-text_header {
+    margin-top: 0.78125em;
+  }
+}
+@media screen and (max-width: 280px) {
+  .page-main__about-text_header {
+    font-size: 2em !important;
+  }
 }
 .page-main__about-text_main-text {
   font-style: normal;
@@ -402,6 +500,16 @@ body {
   transition: background-color 0.5s;
   transition: border 1s, border-color 0s;
   /* margin-bottom: 30px; */
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-text_btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: calc(280px + 20px)) {
+  .page-main__about-text_btn {
+    width: 100%;
+  }
 }
 .page-main__about-text_btn:hover {
   background: #f9f9f9;

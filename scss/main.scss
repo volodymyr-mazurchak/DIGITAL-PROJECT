@@ -22,6 +22,10 @@ $white-color: #ffffff;
     font-size: 4em;
     line-height: 1em;
     color: #bdbdbd;
+
+    @include large-mobile {
+      font-size: 3em;
+    }
   }
 
   .headers-white {
@@ -148,19 +152,33 @@ $white-color: #ffffff;
     height: 829px;
     min-width: 15.5em;
 
-    @include tablet {
-      width: 78%;
+    @include nearly-laptop {
+      width: 34.375em;
       height: auto;
-      /* min-width: 15.5em; */
+    }
 
-      &_photo {
+    @include small-laptop {
+      width: 78%;
+    }
+
+    /* @include tablet {
+      width: 78%; */
+    /* height: auto; */
+    /* min-width: 15.5em; */
+
+    /* &_photo {
         width: 100%;
         height: 100%;
-      }
-    }
+      } */
+    /*  } */
 
     @include tiny {
       width: 100%;
+    }
+
+    &_photo {
+      width: 100%;
+      height: 100%;
     }
 
     /* &_photo {
@@ -213,6 +231,16 @@ $white-color: #ffffff;
     padding: 1.875em 4.375em 0 6.25em;
     /* letter-spacing: 0.2em; */
     /* padding: 30px 70px 0 100px; */
+
+    @include nearly-laptop {
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+    }
+
+    @include large-mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__about-photoes {
@@ -221,6 +249,25 @@ $white-color: #ffffff;
     align-items: center;
     margin-right: 30px;
     /* position: relative; */
+
+    @include nearly-laptop {
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    @include large-mobile {
+      flex-direction: column;
+    }
+
+    @include large-tiny {
+      width: 100%;
+    }
+
+    &_first-container {
+      @include large-tiny {
+        width: 100%;
+      }
+    }
 
     &_photo {
       display: block;
@@ -231,6 +278,11 @@ $white-color: #ffffff;
       height: 265px;
       /* margin-bottom: 30px; */
       margin-top: 30px;
+
+      @include large-tiny {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .photo-two {
@@ -238,6 +290,15 @@ $white-color: #ffffff;
       height: 140px;
       /* padding-top: 30px; */
       margin-top: 30px;
+
+      @include large-mobile {
+        margin-top: 0;
+      }
+
+      @include large-tiny {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .photo-three {
@@ -246,10 +307,24 @@ $white-color: #ffffff;
       margin-left: 30px;
       /* position: absolute;
       right: 0; */
+
+      @include large-mobile {
+        margin-left: 0;
+      }
+
+      @include large-tiny {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
   &__about-text {
+    @include nearly-laptop {
+      text-align: center;
+      padding: 0 1em;
+    }
+
     &_header {
       /* font-style: normal;
       font-weight: 300;
@@ -257,6 +332,18 @@ $white-color: #ffffff;
       line-height: 64px;
       color: #bdbdbd; */
       margin-bottom: 20px;
+
+      @include nearly-laptop {
+        margin-top: 0.78125em;
+      }
+
+      @include tiny {
+        font-size: 2em !important;
+      }
+
+      /* @include large-mobile {
+        font-size: 3em;
+      } */
     }
 
     &_main-text {
@@ -275,6 +362,14 @@ $white-color: #ffffff;
       @include btn;
       transition: border 1s, border-color 0s;
       /* margin-bottom: 30px; */
+
+      @include nearly-laptop {
+        margin: 0 auto;
+      }
+
+      @include large-tiny {
+        width: 100%;
+      }
     }
 
     &_btn:hover {
