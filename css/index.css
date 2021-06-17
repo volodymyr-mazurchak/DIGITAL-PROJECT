@@ -135,6 +135,14 @@ body {
     color: #bdbdbd; */
   /* margin-bottom: 62px; */
   /*  } */
+  /* &__contact-us-form {
+    &_product {
+      @include small-mobile {
+        height: 60px;
+        padding-bottom: 10px;
+      }
+    }
+  } */
 }
 @media screen and (max-width: 1200px) {
   .page-main {
@@ -910,11 +918,35 @@ body {
 .page-main__contact-us-form-img-wrapper {
   display: flex;
 }
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__contact-us-form-img-wrapper {
+    flex-direction: column-reverse;
+  }
+}
 .page-main__contact-us-form {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  margin-right: 1.875em;
   width: 391px;
+  /* &_product {
+    @include small-mobile {
+      height: 60px;
+      padding-bottom: 10px;
+    }
+  } */
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__contact-us-form {
+    margin-right: 0;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .page-main__contact-us-form {
+    width: 70%;
+    align-self: center;
+  }
 }
 .page-main__contact-us-form_textarea {
   height: 147px;
@@ -940,6 +972,11 @@ body {
   margin-left: 40px;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 574px) {
+  .page-main__contact-us-form_label {
+    margin-left: 0;
+  }
+}
 .page-main__contact-us-form_btn {
   width: 222px;
   height: 71px;
@@ -952,6 +989,11 @@ body {
   cursor: pointer;
   transition: background-color 0.5s;
   background-color: #333333;
+}
+@media screen and (max-width: 1200px) {
+  .page-main__contact-us-form_btn {
+    width: 100%;
+  }
 }
 .page-main__contact-us-form_btn-text {
   margin-right: 15px;
@@ -981,15 +1023,32 @@ body {
   margin-bottom: 10px;
   /* padding-left: 21px; */
 }
+@media screen and (max-width: calc(574px - 154px)) {
+  .page-main__contact-us-form input.page-main__contact-us-form_product {
+    height: 60px;
+    padding-bottom: 10px;
+  }
+}
 .page-main__contact-us-form input::placeholder {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
   color: #8d8d8d;
+  white-space: pre-wrap;
 }
 .page-main__contact-us-img-wrapper {
   height: 369px;
   flex-grow: 1;
+  /* border: 1px solid black; */
+  /* @include tablet {
+    height: auto;
+  } */
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__contact-us-img-wrapper {
+    height: auto;
+    margin-bottom: 1.875em;
+  }
 }
 .page-main__contact-us-img {
   display: block;
