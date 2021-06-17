@@ -23,6 +23,10 @@ $white-color: #ffffff;
     line-height: 1em;
     color: #bdbdbd;
 
+    @include nearly-laptop {
+      text-align: center;
+    }
+
     @include large-mobile {
       font-size: 3em;
     }
@@ -40,6 +44,14 @@ $white-color: #ffffff;
     line-height: 1em;
     color: $white-color;
     margin-bottom: 14px;
+
+    @include small-laptop {
+      font-size: 3em;
+    }
+
+    @include mobile {
+      font-size: 1em;
+    }
   }
 
   &__project-photo {
@@ -325,7 +337,7 @@ $white-color: #ffffff;
 
   &__about-text {
     @include nearly-laptop {
-      text-align: center;
+      /* text-align: center; */
       padding: 0 1em;
     }
 
@@ -388,14 +400,14 @@ $white-color: #ffffff;
 
   &__tasks-container {
     margin-bottom: 122px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
-  &__main-tasks-header {
+  /* &__main-tasks-header {
     @include nearly-laptop {
       text-align: center;
     }
-  }
+  } */
 
   /* &__main-tasks-header {
     font-style: normal;
@@ -512,11 +524,22 @@ $white-color: #ffffff;
 
     .imgs-wrapper {
       height: 255px;
-      min-width: 1170px;
+      /* min-width: 1170px; */
+
+      @include small-laptop {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
     }
 
     .figures {
       position: relative;
+
+      @include small-laptop {
+        width: 70%;
+        margin-bottom: 1.875em;
+      }
     }
 
     .projects-imgs {
@@ -558,6 +581,11 @@ $white-color: #ffffff;
       width: 133px;
       height: 12px;
       background-color: transparent;
+
+      @include mobile {
+        padding: 0;
+        justify-content: flex-start;
+      }
     }
 
     .hidden-btns-text {
@@ -572,10 +600,29 @@ $white-color: #ffffff;
 
     .factory-header {
       font-size: 50px;
+
+      /*  @include small-laptop {
+        font-size: 3em;
+      } */
     }
 
     .big-house-header {
       font-size: 55px;
+
+      /* @include small-laptop {
+        font-size: 3em;
+      } */
+    }
+
+    .factory-header,
+    .big-house-header {
+      @include small-laptop {
+        font-size: 3em;
+      }
+
+      @include mobile {
+        font-size: 1em;
+      }
     }
   }
 
@@ -586,16 +633,34 @@ $white-color: #ffffff;
   &__projects-first-row {
     display: flex;
     margin-bottom: $imgs-indent;
+
+    @include small-laptop {
+      margin-bottom: 0;
+    }
     /* justify-content: space-between; */
     /* min-width: 1170px; */
+
+    /* @include small-laptop {
+      flex-direction: column;
+      align-items: center;
+    } */
 
     &_centre-img-wrapper,
     &_theatre-img-wrapper {
       flex-grow: 1;
+
+      /* @include small-laptop {
+        width: 70%;
+      } */
     }
 
     &_theatre-img-wrapper {
       margin-left: $imgs-indent;
+
+      @include small-laptop {
+        margin-left: 0;
+        /* margin-top: 1.875em; */
+      }
     }
 
     /* &_centre-img,
@@ -616,9 +681,17 @@ $white-color: #ffffff;
     display: flex;
     margin-bottom: $imgs-indent;
 
+    @include small-laptop {
+      margin-bottom: 0;
+    }
+
     &_factory-img-wrapper,
     &_big-house-img-wrapper {
       margin-right: $imgs-indent;
+
+      @include small-laptop {
+        margin-right: 0;
+      }
     }
 
     &_factory-img-wrapper {
@@ -658,12 +731,20 @@ $white-color: #ffffff;
   &__projects-third-row {
     display: flex;
     justify-content: flex-end;
+
+    @include small-laptop {
+      justify-content: center;
+    }
   }
 
   &__projects-btn {
     @include btn;
     background-color: #333333;
     border: 2px solid transparent;
+
+    @include small-laptop {
+      width: 70%;
+    }
 
     &_btn-text {
       @include btn-text;
