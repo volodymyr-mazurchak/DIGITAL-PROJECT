@@ -153,6 +153,11 @@ body {
     font-size: 3em;
   }
 }
+@media screen and (max-width: 280px) {
+  .page-main .headers {
+    font-size: 2em;
+  }
+}
 .page-main .headers-white {
   font-style: normal;
   font-weight: bold;
@@ -462,6 +467,9 @@ body {
   line-height: 64px;
   color: #bdbdbd; */
   margin-bottom: 20px;
+  /* @include tiny {
+    font-size: 2em !important;
+  } */
   /* @include large-mobile {
     font-size: 3em;
   } */
@@ -469,11 +477,6 @@ body {
 @media screen and (max-width: calc(1440px - 1px)) {
   .page-main__about-text_header {
     margin-top: 0.78125em;
-  }
-}
-@media screen and (max-width: 280px) {
-  .page-main__about-text_header {
-    font-size: 2em !important;
   }
 }
 .page-main__about-text_main-text {
@@ -527,6 +530,12 @@ body {
 }
 .page-main__tasks-container {
   margin-bottom: 122px;
+  border: 1px solid black;
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__main-tasks-header {
+    text-align: center;
+  }
 }
 .page-main__tasks {
   display: flex;
@@ -543,26 +552,67 @@ body {
     color: #f2f2f2;
   } */
 }
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__tasks {
+    flex-direction: column;
+  }
+}
 .page-main__tasks_first-column {
   display: flex;
+}
+@media screen and (max-width: calc(574px - 154px)) {
+  .page-main__tasks .columns {
+    margin-top: 1.875em;
+  }
 }
 .page-main__tasks .numbers {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 200px;
-  line-height: 239px;
+  /* font-size: 200px;
+  line-height: 239px; */
+  font-size: 12.5em;
+  line-height: 1.195em;
   display: flex;
   align-items: center;
   color: #f2f2f2;
 }
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__tasks .numbers {
+    /* display: block; */
+    width: 0.605em;
+  }
+}
+@media screen and (max-width: calc(574px - 154px)) {
+  .page-main__tasks .numbers {
+    /* font-size: 10.5em; */
+    font-size: 7.5em;
+  }
+}
 .page-main__tasks .texts {
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 36px;
+  /*  font-size: 22px; */
+  /* line-height: 36px; */
+  font-size: 1.375em;
+  line-height: 1.6363636364em;
   color: #333333;
-  margin: 45px 0 0 30px;
+  /* margin: 45px 0 0 30px; */
+  margin: 2.0454545455em 0 0 1.3636363636em;
+}
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__tasks .texts {
+    width: 100%;
+    align-self: center;
+    margin: 0 0 0 1.5em;
+  }
+}
+@media screen and (max-width: calc(574px - 154px)) {
+  .page-main__tasks .texts {
+    /* font-size: 1.25em; */
+    font-size: 1em;
+    margin: 0 0 0 0.5em;
+  }
 }
 .page-main__tasks_text-one {
   /* font-style: normal;
@@ -574,6 +624,8 @@ body {
   width: 380px;
   /* width: 279px;
   height: 144px; */
+  /* @include nearly-laptop {
+  } */
 }
 .page-main__tasks_second-column {
   display: flex;

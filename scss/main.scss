@@ -26,6 +26,10 @@ $white-color: #ffffff;
     @include large-mobile {
       font-size: 3em;
     }
+
+    @include tiny {
+      font-size: 2em;
+    }
   }
 
   .headers-white {
@@ -337,9 +341,9 @@ $white-color: #ffffff;
         margin-top: 0.78125em;
       }
 
-      @include tiny {
+      /* @include tiny {
         font-size: 2em !important;
-      }
+      } */
 
       /* @include large-mobile {
         font-size: 3em;
@@ -384,6 +388,13 @@ $white-color: #ffffff;
 
   &__tasks-container {
     margin-bottom: 122px;
+    border: 1px solid black;
+  }
+
+  &__main-tasks-header {
+    @include nearly-laptop {
+      text-align: center;
+    }
   }
 
   /* &__main-tasks-header {
@@ -399,28 +410,65 @@ $white-color: #ffffff;
     display: flex;
     justify-content: space-between;
 
+    @include nearly-laptop {
+      flex-direction: column;
+    }
+
     &_first-column {
       display: flex;
+    }
+
+    .columns {
+      @include small-mobile {
+        margin-top: 1.875em;
+      }
     }
 
     .numbers {
       font-family: "SF Pro Display";
       font-style: normal;
       font-weight: 900;
-      font-size: 200px;
-      line-height: 239px;
+      /* font-size: 200px;
+      line-height: 239px; */
+      font-size: 12.5em;
+      line-height: 1.195em;
       display: flex;
       align-items: center;
       color: #f2f2f2;
+
+      @include nearly-laptop {
+        /* display: block; */
+        width: 0.605em;
+      }
+
+      @include small-mobile {
+        /* font-size: 10.5em; */
+        font-size: 7.5em;
+      }
     }
 
     .texts {
       font-style: normal;
       font-weight: 400;
-      font-size: 22px;
-      line-height: 36px;
+      /*  font-size: 22px; */
+      /* line-height: 36px; */
+      font-size: 1.375em;
+      line-height: 1.6363636363636365em;
       color: #333333;
-      margin: 45px 0 0 30px;
+      /* margin: 45px 0 0 30px; */
+      margin: 2.0454545454545454em 0 0 1.3636363636363635em;
+
+      @include nearly-laptop {
+        width: 100%;
+        align-self: center;
+        margin: 0 0 0 1.5em;
+      }
+
+      @include small-mobile {
+        /* font-size: 1.25em; */
+        font-size: 1em;
+        margin: 0 0 0 0.5em;
+      }
     }
 
     /* &_number-one {
@@ -445,6 +493,9 @@ $white-color: #ffffff;
       width: 380px;
       /* width: 279px;
       height: 144px; */
+
+      /* @include nearly-laptop {
+      } */
     }
 
     &_second-column {

@@ -47,6 +47,12 @@ $screen-t: 280px;
   }
 }
 
+@mixin small-mobile {
+  @media screen and (max-width: calc(#{$screen-xs} - 154px)) {
+    @content;
+  }
+}
+
 @mixin large-tiny {
   @media screen and (max-width: calc(#{$screen-t} + 20px)) {
     @content;
