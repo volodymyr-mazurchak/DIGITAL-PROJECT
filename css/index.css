@@ -435,6 +435,11 @@ body {
 .page-main__about-photoes_photo {
   display: block;
 }
+@media screen and (max-width: calc(574px + 26px)) {
+  .page-main__about-photoes_photo {
+    padding: 10px 0;
+  }
+}
 .page-main__about-photoes .photo-one {
   width: 270px;
   height: 265px;
@@ -518,6 +523,17 @@ body {
   /* width: 506px; */
   /* width: 400px; */
 }
+@media screen and (max-width: calc(1440px - 1px)) {
+  .page-main__about-text_main-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .page-main__about-text_main-text {
+    padding: 0 5px;
+    /* text-align: center; */
+  }
+}
 .page-main__about-text_btn {
   width: 222px;
   height: 71px;
@@ -583,9 +599,20 @@ body {
 .page-main__tasks_first-column {
   display: flex;
 }
+@media screen and (max-width: 1200px) {
+  .page-main__tasks .columns {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .page-main__tasks .columns {
+    padding: 0;
+  }
+}
 @media screen and (max-width: calc(574px - 154px)) {
   .page-main__tasks .columns {
     margin-top: 1.875em;
+    /* padding: 0; */
   }
 }
 .page-main__tasks .numbers {
@@ -746,13 +773,15 @@ body {
   color: #ffffff;
 }
 .page-main__projects-container .factory-header {
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 42px;
   /*  @include small-laptop {
     font-size: 3em;
   } */
 }
 .page-main__projects-container .big-house-header {
-  font-size: 55px;
+  /* font-size: 55px; */
+  font-size: 47px;
   /* @include small-laptop {
     font-size: 3em;
   } */
@@ -1048,6 +1077,12 @@ body {
   .page-main__contact-us-img-wrapper {
     height: auto;
     margin-bottom: 1.875em;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .page-main__contact-us-img-wrapper {
+    padding: 0;
   }
 }
 .page-main__contact-us-img {
@@ -1085,11 +1120,9 @@ body {
   line-height: 20px;
   color: #ffffff;
   margin-bottom: 25px;
-}
-@media screen and (max-width: calc(1440px - 1px)) {
-  .page-footer .top-headers {
+  /* @include nearly-laptop {
     border-top: 2px solid grey;
-  }
+  } */
 }
 .page-footer .top-text {
   font-style: normal;

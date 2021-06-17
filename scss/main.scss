@@ -287,6 +287,10 @@ $white-color: #ffffff;
 
     &_photo {
       display: block;
+
+      @include large-mobile {
+        padding: 10px 0;
+      }
     }
 
     .photo-one {
@@ -370,6 +374,15 @@ $white-color: #ffffff;
       line-height: 25px;
       color: #000000;
       margin-bottom: 20px;
+
+      @include nearly-laptop {
+        text-align: center;
+      }
+
+      @include small-laptop {
+        padding: 0 5px;
+        /* text-align: center; */
+      }
       /* width: 506px; */
       /* width: 400px; */
     }
@@ -431,8 +444,17 @@ $white-color: #ffffff;
     }
 
     .columns {
+      @include small-laptop {
+        padding: 0 20px;
+      }
+
+      @include mobile {
+        padding: 0;
+      }
+
       @include small-mobile {
         margin-top: 1.875em;
+        /* padding: 0; */
       }
     }
 
@@ -599,7 +621,8 @@ $white-color: #ffffff;
     }
 
     .factory-header {
-      font-size: 50px;
+      /* font-size: 50px; */
+      font-size: 42px;
 
       /*  @include small-laptop {
         font-size: 3em;
@@ -607,7 +630,8 @@ $white-color: #ffffff;
     }
 
     .big-house-header {
-      font-size: 55px;
+      /* font-size: 55px; */
+      font-size: 47px;
 
       /* @include small-laptop {
         font-size: 3em;
@@ -909,6 +933,11 @@ $white-color: #ffffff;
     @include nearly-laptop {
       height: auto;
       margin-bottom: 1.875em;
+      padding: 0 10px;
+    }
+
+    @include mobile {
+      padding: 0;
     }
 
     /* @include tablet {
