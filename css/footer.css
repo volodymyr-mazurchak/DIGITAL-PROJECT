@@ -1,81 +1,18 @@
-.page-footer {
-  background-color: #2c2c2c;
-}
-.page-footer .top-headers {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  margin-bottom: 25px;
-}
-.page-footer .top-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.page-footer__top {
-  display: flex;
-  justify-content: space-between;
-  padding: 58px 218px 60px 116px;
-  /* max-width: $max-width; */
-  margin: 0 auto;
-}
-.page-footer__info-wrapper_list {
-  list-style: none;
-}
-.page-footer__info-wrapper_list-elem:not(:last-of-type) {
-  margin-bottom: 16px;
-}
-.page-footer__info-wrapper_list-link {
-  text-decoration: none;
-}
-.page-footer__contact-wrapper_address-wrapper, .page-footer__contact-wrapper_telephone-wrapper, .page-footer__contact-wrapper_email-wrapper {
-  display: flex;
-  align-items: flex-start;
-}
-.page-footer__contact-wrapper_address-wrapper {
-  margin-bottom: 31px;
-}
-.page-footer__contact-wrapper_telephone-wrapper {
-  margin-bottom: 33px;
-}
-.page-footer__contact-wrapper_address-text {
-  /*  width: 314px; */
-  margin-left: 19px;
-  /* margin-bottom: 31px; */
-}
-.page-footer__contact-wrapper_telephone-text, .page-footer__contact-wrapper_email-text {
-  margin-left: 14px;
-}
-.page-footer__contact-wrapper_email-text {
-  line-height: 15px !important;
-}
-.page-footer__social-networks-wrapper_logos-link {
-  text-decoration: none;
-}
-.page-footer__social-networks-wrapper_logos-link:not(:last-of-type) {
-  margin-right: 40px;
-}
-.page-footer__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  /*     opacity: 0.1; */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  /* z-index: 1; */
-}
-.page-footer__bottom_text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 22px;
-  color: rgba(200, 200, 200, 0.5);
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 10 | /     @include nearly-laptop {
+ * 11 | |       text-align: center;
+ * 12 | \     }
+ *    '
+ *   scss\footer.scss 10:5  root stylesheet */
 
-/*# sourceMappingURL=footer.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include nearly-laptop {\a 11 \2502  \2502        text-align: center;\a 12 \2502  \2514      }\a    \2575 \a   scss\\footer.scss 10:5  root stylesheet";
+}
