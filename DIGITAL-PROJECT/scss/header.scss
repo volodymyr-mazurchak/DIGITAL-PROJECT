@@ -1,0 +1,74 @@
+.page-header {
+  height: 6.375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 15.625em;
+
+  @include mobile {
+    padding: 0 1em;
+  }
+
+  &__logo-wrapper {
+    &_logo {
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 48.125em;
+    font-size: 0.75em;
+    margin-right: 11.166666666666666em;
+    letter-spacing: 0.15000000000000002em;
+
+    @include small-laptop {
+      margin-right: 0;
+    }
+
+    @include tablet {
+      justify-content: flex-end;
+    }
+
+    &_elem {
+      list-style: none;
+
+      &_mobile {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+
+        &_mobile {
+          display: block;
+          font-size: 6em;
+          text-decoration: none;
+          border: none;
+        }
+      }
+    }
+
+    &_link {
+      text-decoration: none;
+      color: #333333;
+      padding: 0.3333333333333333em 0;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      transition: border 0.5s;
+    }
+
+    &_link:hover {
+      color: #868282;
+    }
+
+    &_link:focus {
+      border-color: #333333;
+    }
+
+    .mobile-link {
+      border: none;
+    }
+  }
+}
